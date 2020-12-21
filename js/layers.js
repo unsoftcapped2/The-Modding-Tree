@@ -136,7 +136,10 @@ if (hasUpgrade("i",21)) mult=mult.times(player.i.points.plus(1))
 },
 doReset(resettingLayer){if (layers[resettingLayer].row > this.row) {
 		player.t.points=new Decimal(0); 
-	if (!hasMilestone("f",3)){player.t.milestones=[]; player.t.challenges=[];player.t.upgrades=[]}
+	let keep=[]
+	
+	if (hasMilestone("f",3)){keep.push("milestones");keep.push("challenges");keep.push("upgrades");}
+	layerDataReset(this.layer, keep)
 		
 	}}	
 	
