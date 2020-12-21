@@ -1,6 +1,6 @@
 let modInfo = {
 	name: "Modding Tree Tree",
-	id: "infinitylayers",
+	id: "infinitylayersfix",
 	author: "unsoftcapped",
 	pointsName: "seconds",
 	discordName: "unsoftcapped#0846",
