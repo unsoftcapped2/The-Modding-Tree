@@ -11,7 +11,7 @@ addLayer("q", {
     row: "side", // Row the layer is in on the tree (0 is the first row)
 	resetsNothing(){return true},
 	resource: "secrets",
-    layerShown(){return (player.t.points.eq(0) && player.f.points.eq(0) && player.p.points.eq(0)&&!player.c.unlocked)},	
+    layerShown(){return (player.t.points.eq(0) && player.f.points.eq(0) && player.p.points.eq(0))},	
 	
 	upgrades: {
     rows: 1,
@@ -986,7 +986,7 @@ addLayer("p", {
 	branches: ["d"],
     color: "#ffffff",
 	requires(){
-if (player.c.points.gte(1)) return new Decimal("10^^3")
+//if (player.c.points.gte(1)) return new Decimal("10^^3")
 return new Decimal("1e3000000000")}, // Can be a function that takes requirement increases into account
     resource: "Points", // Name of prestige currency
     baseResource: "seconds", // Name of resource prestige is based on
@@ -1076,7 +1076,7 @@ tabFormat: [
     "upgrades"
 ]
 })
-
+/*
 addLayer("c", {
     name: "Channels", // This is optional, only used in a few places, If absent it just uses the layer id.
     symbol: "C", // This appears on the layer's node. Default is the id with the first letter capitalized
@@ -1087,7 +1087,7 @@ addLayer("c", {
     }},
 	branches: ["p"],
     color: "#897bd4",
-effectDescription(){return "Making the tree "+player.c.points.times(10)+"% bigger."},
+effectDescription(){return ""},
 	requires: new Decimal("1.79e308"), // Can be a function that takes requirement increases into account
     resource: "channels", // Name of prestige currency
     baseResource: "points", // Name of resource prestige is based on
@@ -1111,3 +1111,4 @@ effectDescription(){return "Making the tree "+player.c.points.times(10)+"% bigge
 
 }
 )
+*/
