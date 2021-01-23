@@ -13,14 +13,13 @@ let modInfo = {
 
 // Set your version in num and name
 let VERSION = {
-	num: "2.3.4",
-	name: "Finished",
+	num: "2.3.5",
+	name: "Removed Channels",
 }
 
 let changelog = `<h1>Changelog:</h1><br>
-	<h3>v0.0</h3><br>
-		- Added things.<br>
-		- Added stuff.`
+	<h3>v2.3.5</h3><br>
+		- Removed channels because they were not done`
 
 let winText = `Congratulations! You have reached the end and beaten this game, but for now...`
 
