@@ -129,12 +129,12 @@ function addedPlayerData() { return {
 
 // Display extra things at the top of the page
 
-var displayThings = ["Endgame: 1 Channel and e3e9 points"]
+var displayThings = ["Endgame: ∞ points"]
 
 
 // Determines when the game "ends"
 function isEndgame() {
-	return player.p.points.gte("e3e9")&&player.c.points.gte(1)}
+	return player.p.points.gte("10^^1e308")}
 
 
 
