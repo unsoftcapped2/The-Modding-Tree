@@ -297,7 +297,7 @@ addLayer("m", {
     ],
     layerShown(){return true},
 upgrades: {
-    rows: 6,
+    rows: 7,
     cols: 5,
     11: {
 	    title: "dudcat0507",
@@ -445,6 +445,31 @@ upgrades: {
     },
 	65: {unlocked(){return hasUpgrade("l",21)},
 	    title: "themkeyholder",
+        description: "Hire someone to make more mods",
+        cost: new Decimal(1)
+    },
+	71: {unlocked(){return hasUpgrade("p",11)},
+	    title: "monkeh42",
+        description: "Hire someone to make more mods",
+        cost: new Decimal(1)
+    },
+	72: {unlocked(){return hasUpgrade("p",11)},
+	    title: "ColeLukes",
+        description: "Hire someone to make more mods",
+        cost: new Decimal(1)
+    },
+	73: {unlocked(){return hasUpgrade("p",11)},
+	    title: "randomtuba",
+        description: "Hire someone to make more mods",
+        cost: new Decimal(1)
+    },
+	74: {unlocked(){return hasUpgrade("p",11)},
+	    title: "Yhvr",
+        description: "Hire someone to make more mods",
+        cost: new Decimal(1)
+    },
+	75: {unlocked(){return hasUpgrade("p",11)},
+	    title: "spotky",
         description: "Hire someone to make more mods",
         cost: new Decimal(1)
     },
@@ -1036,7 +1061,7 @@ rows: 2,
 cols: 3,
 11: { unlocked() {return hasMilestone("p",1)},
 	    title: "You",
-        description: "Gain 1 Point per second",
+        description: "Gain 1 Point per second and unlock 5 more mod creators",
         cost: new Decimal("1")
     },
 12: { unlocked() {return hasUpgrade("p",11)},
