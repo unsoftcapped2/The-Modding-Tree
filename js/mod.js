@@ -71,6 +71,11 @@ function getPointGen() {
 	if (hasUpgrade("m", 63))gain=gain.add(1)
 	if (hasUpgrade("m", 64))gain=gain.add(1)
 	if (hasUpgrade("m", 65))gain=gain.add(1)
+	if (hasUpgrade("m", 71))gain=gain.add(1)
+	if (hasUpgrade("m", 72))gain=gain.add(1)
+	if (hasUpgrade("m", 73))gain=gain.add(1)
+	if (hasUpgrade("m", 74))gain=gain.add(1)
+	if (hasUpgrade("m", 75))gain=gain.add(1)
 	if (hasUpgrade("m", 54)){
 		let boost = new Decimal(0)
 		if (hasUpgrade("m", 13))boost=boost.add(2)
