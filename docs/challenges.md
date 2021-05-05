@@ -5,14 +5,13 @@ Challenges can have fully customizable win conditions. Useful functions for deal
 - inChallenge(layer, id): determine if the player is in a given challenge (or another challenge on the same layer that counts as this one).
 - hasChallenge(layer, id): determine if the player has completed the challenge.
 - challengeCompletions(layer, id): determine how many times the player completed the challenge.
+- maxedChallenge(layer, id): determines if the player has reached the maximum completions.
 - challengeEffect(layer, id): Returns the current effects of the challenge, if any.
 
 Challenges are stored in the following format:
 
 ```js
 challenges: {
-    rows: # of rows,
-    cols: # of columns,
     11: {
         name: "Ouch",
         challengeDescription: "description of ouchie",
@@ -34,7 +33,8 @@ Individual Challenges can have these features:
 - goalDescription: A description of the win condition for the challenge. It can also be a function that returns updating text.
     Can use basic HTML. (Optional if using the old goal system)
 
-- canComplete(): A function that returns true if you meet the win condition for the challenge. (Optional if using the old goal system)
+- canComplete(): A function that returns true if you meet the win condition for the challenge. Returning a number will allow bulk completing the challenge.
+    (Optional if using the old goal system)
 
 - rewardDescription: A description of the reward's effect. *You will also have to implement the effect where it is applied.* It can also be a function that returns updating text. Can use basic HTML.
 

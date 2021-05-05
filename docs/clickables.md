@@ -16,8 +16,6 @@ Clickables should be formatted like this:
 
 ```js
 clickables: {
-    rows: # of rows,
-    cols: # of columns,
     11: {
         display() {return "Blah"},
         etc
@@ -52,4 +50,4 @@ You can also use these features on the clickables object to add a button above a
 
 - masterButtonText: **optional**. Text to display on the Master Button.
 
-- showMasterButton(): **optional**. A function determining whether or not to show the button. Defaults to true if absent.
+- showMasterButton(): **optional**. A function determining whether or not to show the button, if masterButtonPress is defined. Defaults to true if absent.
