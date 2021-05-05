@@ -91,7 +91,7 @@ if (hasUpgrade("i",21)) mult=mult.times(player.i.points.plus(1))
         },
 		12: {
             name: "TMT v2.0",
-	challengeDescription: "Point gain is hardcapped at 1e90",
+	challengeDescription: "Point gain is gapplecapped at 1e90",
 		rewardDescription: "Boost seconds by log(seconds)",
 		goal: new Decimal(2e91),
 		unlocked(){return hasChallenge("i", 11)}
