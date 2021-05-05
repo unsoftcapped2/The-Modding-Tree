@@ -13,13 +13,13 @@ let modInfo = {
 
 // Set your version in num and name
 let VERSION = {
-	num: "2.3.5",
-	name: "Removed Channels",
+	num: "2.4.1",
+	name: "No more hardcapped",
 }
 
 let changelog = `<h1>Changelog:</h1><br>
-	<h3>v2.3.5</h3><br>
-		- Removed channels because they were not done`
+	<h3>v2.4.1</h3><br>
+		- No more hardcaps`
 
 let winText = `Congratulations! You have reached the end and beaten this game, but for now...`
 
@@ -113,7 +113,7 @@ function getPointGen() {
 	if (hasMilestone("b",1)) gain=gain.times(1e100)
 if (hasUpgrade("b",11)) gain=gain.times(1e100)
 if (hasUpgrade("d",21)) gain=gain.pow(1.00106456)
-	if (inChallenge("t",12)) gain=gain.min(1e90)
+	if (inChallenge("t",12)&&gain.gt(1e90))gain=gain.pow(1/90).times(1e89)
 	if (inChallenge("f",11)) gain=gain.pow(0.5)
 	if (inChallenge("f",22) && gain.gte("1e300000000")) gain=gain.pow(0.5)
 	if (inChallenge("f",31)) gain=gain.times(player.f.points)
