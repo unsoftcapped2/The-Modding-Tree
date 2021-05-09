@@ -13,13 +13,13 @@ let modInfo = {
 
 // Set your version in num and name
 let VERSION = {
-	num: "2.4.1",
-	name: "No more hardcapped",
+	num: "2.5.2",
+	name: "",
 }
 
 let changelog = `<h1>Changelog:</h1><br>
-	<h3>v2.4.1</h3><br>
-		- No more hardcaps`
+	<h3>v2.5.2</h3><br>
+		- 4 more mod creators`
 
 let winText = `Congratulations! You have reached the end and beaten this game, but for now...`
 
@@ -76,6 +76,10 @@ function getPointGen() {
 	if (hasUpgrade("m", 73))gain=gain.add(1)
 	if (hasUpgrade("m", 74))gain=gain.add(1)
 	if (hasUpgrade("m", 75))gain=gain.add(1)
+	if (hasUpgrade("m", 81))gain=gain.add(1)
+	if (hasUpgrade("m", 82))gain=gain.add(1)
+	if (hasUpgrade("m", 83))gain=gain.add(1)
+	if (hasUpgrade("m", 84))gain=gain.add(1)
 	if (hasUpgrade("m", 54)){
 		let boost = new Decimal(0)
 		if (hasUpgrade("m", 12))boost=boost.add(2)
