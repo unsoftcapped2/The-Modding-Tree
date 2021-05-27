@@ -12,7 +12,7 @@ addLayer("q", {
 	resetsNothing(){return true},
 	resource: "secrets",
     layerShown(){return (player.t.points.eq(0) && player.f.points.eq(0) && player.p.points.eq(0))},	
-	
+	shouldNotify(){return false},
 	upgrades: {
     rows: 1,
     cols: 1,
