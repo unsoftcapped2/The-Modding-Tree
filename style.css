@@ -131,7 +131,7 @@ h1, h2, h3, b, input {
 .notify {
 	transform: scale(1.05, 1.05);
 	border-color: rgba(0, 0, 0, 0.125);
-	box-shadow: var(--hqProperty2a), 0 0 20px #ff0000;
+	box-shadow: var(--hqProperty2a), 0 0 20px;
 	z-index: 3
 }
 
